@@ -144,10 +144,6 @@ doc-subtab: textarea
 
     <div class="content">
       <p>
-        <span class="tag is-success">New!</span>
-        <span class="tag is-info">0.4.4</span>
-      </p>
-      <p>
         You can set the height of the textarea using the `rows` HTML attribute.
       </p>
     </div>
@@ -180,25 +176,19 @@ doc-subtab: textarea
 
     {% include snippet.html content=loading_example %}
 
-    {% if site.vernum >= 43 %}
-      <div class="columns">
-        <div class="column is-half">
-          <p style="margin-bottom: 0.5rem;">
-            <span class="tag is-success">New!</span>
-            <span class="tag is-info">0.4.3</span>
+    <div class="columns">
+      <div class="column is-half">
+        <div class="content">
+          <p>
+            You can resize the loading spinner by appending <code>is-small</code>, <code>is-medium</code> or <code>is-large</code> to the <code>control</code> container.
           </p>
-          <div class="content">
-            <p>
-              You can resize the loading spinner by appending <code>is-small</code>, <code>is-medium</code> or <code>is-large</code> to the <code>control</code> container.
-            </p>
-          </div>
-          {{loading_sizes_example}}
         </div>
-        <div class="column is-half highlight-full">
-          {% highlight html %}{{loading_sizes_example}}{% endhighlight %}
-        </div>
+        {{loading_sizes_example}}
       </div>
-    {% endif %}
+      <div class="column is-half highlight-full">
+        {% highlight html %}{{loading_sizes_example}}{% endhighlight %}
+      </div>
+    </div>
 
     <h4 class="subtitle">Disabled</h4>
 
